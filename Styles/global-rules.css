@@ -1,0 +1,160 @@
+* { margin:0; padding:0; font-family:'Lato' ; transition: 0.4s }
+
+:root {
+    --first-color: #adc47d;
+    --second-color:   #76864f;
+    --sub-color: #646165;
+}
+
+ul { list-style: none; }
+a  { text-decoration: none }
+.container { padding: 0 120px }
+.btn {
+    background-color: var(--second-color);
+    color: #fff;
+    border: none;
+    padding: 5px;
+    width: 10em;
+    height: 2.5em;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.btn:hover {
+    opacity: .8;
+}
+
+
+/* Header Style */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    border-bottom: 2px solid var(--first-color);
+}
+header ul {
+    display: flex;
+    align-items: center;
+    gap: 2em
+}
+header ul li {
+    font-weight: 600;
+    font-size: 18px;
+}
+header ul li {
+    color: #000;
+    letter-spacing: 0.4px;
+}
+header ul li:hover {
+    border-bottom: 2px solid var(--first-color)
+}
+
+/* Footer */
+footer {
+    background-color: var(--second-color)
+}
+footer .quote {
+    position: relative;
+    background-image: url(../Images/soilder3.png);
+    background-size: cover;
+    background-position: center;
+    height: 12em;
+    border-top: 4px solid var(--first-color);
+    border-bottom: 4px solid var(--first-color)
+}
+footer .quote::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b9
+}
+footer .quote h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--first-color);
+    font-size: 3.5em;
+    width: 100%;
+    text-align: center;
+}
+
+footer .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    padding: 2em 0;
+}
+footer .info .logo {
+    margin: 0
+}
+
+footer .info .contact h4,
+footer .info .location h4 {
+    font-size: 20px;
+}
+footer .info .contact p,
+footer .info .location p {
+    font-size: 15px
+}
+
+footer .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+footer .links ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+}
+footer .links ul li {
+    font-size: 20px;
+    color: #fff
+}
+footer .links ul li:hover {
+    border-bottom: 2px solid var(--first-color)
+}
+
+footer .rights {
+    text-align: center;
+    padding: 1.5em 0;
+    color: #fff
+}
+
+
+/*Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 3em;
+    font-family: 'Oswald';
+}
+.logo::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--first-color);
+    width: 4.9em;
+    height: 2.1em;
+    z-index: -1;
+    border-radius: 2px;
+}
+.logo h1 {
+    font-style: italic;
+}
+.logo h1:first-child {
+    color: #fff;
+    margin-right: 4px
+}
