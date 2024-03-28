@@ -1,0 +1,107 @@
+.about {
+
+}
+
+.about .container {
+    padding: 4em 220px
+}
+
+.title {
+
+}
+.title h1 {
+    position: relative;
+    max-width: 17em;
+    font-size: 45px;
+}
+.title h1::before {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    background-color: var(--second-color);
+    height: 5px;
+    width: 8em
+}
+
+
+.content {
+    margin-top: 3em
+}
+
+.content .st {
+    font-size: 22px;
+}
+
+.content .features {
+
+}
+.content .features .title {
+    display: flex;
+    align-items: center;
+    gap: 0.5em
+}
+.content .features .title p {
+    font-size: 22px;
+    margin-bottom: 5px;
+    width: fit-content;
+}
+.content .features .title h2 {
+    font-size: 28px;
+    background-color: var(--second-color);
+    color: #fff;
+    width: fit-content;
+    padding: 1px 5px;
+    border-radius: 2px;
+    width: fit-content;
+}
+.content .features ul {
+    margin-top: 2em;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 4em
+}
+.content .features ul li {
+    width: 25em
+}
+.content .features ul li h3 {
+    width: fit-content;
+    font-size: 21px;
+    text-transform: uppercase;
+    margin: 5px 0px 15px;
+}
+.content .features ul li p {
+    max-width: 500px;
+    line-height: 1.5em;
+}
+
+
+
+.content .donate {
+    display: flex;
+    justify-content: center;
+    margin: 6em 0;
+}
+.content .donate .image {
+    position: relative;
+    margin-right: 4em;
+}
+.content .donate .image img {
+    width: 30em;
+    box-shadow: -20px 20px 0px var(--second-color);
+}
+
+.content .donate .text {
+
+}
+.content .donate .text h2 {
+    font-size: 30px;
+    max-width: 400px;
+}
+.content .donate .text p {
+    max-width: 600px;
+    font-size: 17px;
+    margin: 15px 0;
+    line-height: 1.5em;
+}

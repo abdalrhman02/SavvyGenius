@@ -29,11 +29,13 @@ a  { text-decoration: none }
 
 /* Header Style */
 header {
+    border-bottom: 2px solid var(--first-color);
+}
+header .container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     height: 70px;
-    border-bottom: 2px solid var(--first-color);
 }
 header ul {
     display: flex;
@@ -43,13 +45,16 @@ header ul {
 header ul li {
     font-weight: 600;
     font-size: 18px;
-}
-header ul li {
     color: #000;
     letter-spacing: 0.4px;
 }
 header ul li:hover {
     border-bottom: 2px solid var(--first-color)
+}
+
+header ul .loginBtn {
+    height: 2em;
+    width: 5em
 }
 
 /* Footer */
